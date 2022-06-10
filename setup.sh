@@ -20,7 +20,7 @@ mkdir Solana/Ledger/logs && touch Solana/Ledger/logs
 cd /hdd/Solana/Ledger
 sysctl -w vm.max_map_count=262144444
 echo "vm.max_map_count=262144444" >> /etc/sysctl.conf
-sh -c "$(curl -sSfL https://release.solana.com/v1.9.16/install)"
+sh -c "$(curl -sSfL https://release.solana.com/v1.9.28/install)"
 export PATH="/root/.local/share/solana/install/active_release/bin:$PATH"
 echo | solana-keygen new -o ~/validator-keypair.json > pubkey.txt
 cp pubkey.txt backupkey.txt
